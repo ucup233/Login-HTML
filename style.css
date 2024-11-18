@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.utama{
+    width: 400px;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    transition: all 0.2s ease;
+}
+h2{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: palevioletred;
+    letter-spacing: 1px;
+}
+button{
+    background-color: palevioletred;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    margin-top: 37px;
+}
+.input-field{
+    position: relative;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    margin: 20px 0;
+}
+.input-field_date{
+
+}
+
+.input-field label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: translateY(-50%);
+    color: beige;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+.input-field input{
+    width: 100%;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 10px;
+}
+.input-field input:focus + label,
+.input-field input:valid + label {
+    top: -10px; 
+    font-size: 12px; 
+    color: palevioletred; 
+}
+
+.input-field input:focus {
+    outline: none; 
+    border-bottom: 2px solid palevioletred; 
+}
+
+.input-field_date {
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.input-field_date label {
+    position: absolute;
+    top: 10%; 
+    left: 0; 
+    transform: translateY(-50%);
+    color: beige;
+    font-size: 16px;
+    pointer-events: none;
+    transition: none; 
+}
+
+.input-field_date input {
+    width: 100%;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.input-field_date input:focus {
+    outline: none;
+    border-bottom: 2px solid palevioletred;
+}
